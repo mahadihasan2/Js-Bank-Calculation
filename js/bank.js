@@ -10,7 +10,12 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   const userPassword = userPasswordField.value;
   //   console.log(passwordField);
 
-  if (userEmail == "rahib12@gmail.com" && userPassword == "mahadi") {
+  /* if (userEmail == "rahib12@gmail.com" && userPassword == "mahadi") {
+    // console.log("Valid User");
+    window.location.href = "banking.html";
+  } */
+
+  if (userEmail.includes("gmail.com") && typeof (userPassword == "number")) {
     // console.log("Valid User");
     window.location.href = "banking.html";
   }
