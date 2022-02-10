@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-4xl mt-16 text-center">Let's Get Some<span class="text-yellow-500"> Mooonoy !!!</span>
+        </h1>
+    </header>
+
+    <main class=" w-3/4 mx-auto">
+        <!-- Balence And Deposite  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-2xl">$<span id="d-amount">00</span> </h4>
+                </div>
+                <div class="bg-yellow-400 p-8 rounded">
+                    <h3 class="text-2xl">withdrow</h3>
+                    <h4 class="text-2xl">$<span id="withdraw-total">00</span></h4>
+                </div>
+                <div class="bg-green-400 p-8 rounded">
+                    <h3 class="text-2xl">Balence</h3>
+                    <h4 class="text-2xl">$<span id="update-amount">1240</span></h4>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Depossite And Withdrow -->
+        <section class=" mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-red-400 rounded p-5">
+                    <h3 class="text-2xl text-center">Please Deposite</h3>
+
+                    <div class="py-4 text-center">
+                        <input id="deposite" class="border-2 block w-3/4 border-lime-500 rounded mb-4 px-2 mx-auto"
+                            type="text" placeholder="$ amount you want to Deposite">
+
+
+                        <button id="deposite-btn" class="mt-3 bg-indigo-800 px-4 py-2 text-xl">Deposite</button>
+
+                    </div>
+                </div>
+                <div class="bg-red-400 rounded p-5">
+                    <h3 class="text-2xl text-center">Please Withdrow</h3>
+
+                    <div class="py-4 text-center">
+                        <input id="withdrow-input"
+                            class="border-2 block w-3/4 border-lime-500 rounded mb-4 px-2 mx-auto" type="text"
+                            placeholder="$ amount you want to withdrow">
+
+
+                        <button id="withdrow-btn" class="mt-3 bg-indigo-800 px-4 py-2 text-xl">Withdrow</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/bankInput.js"></script>
+    <script src="js/depositeAndWithdrow.js"></script>
+</body>
+
+</html>
